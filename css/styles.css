@@ -91,6 +91,7 @@ img {
 
 /* #region Header */
 .header {
+  border-bottom: 1px solid #e7e9fc;
 }
 .header-wrapper {
   display: flex;
@@ -105,7 +106,6 @@ img {
 .header-list {
   display: flex;
   gap: 40px;
-  margin-right: 332px;
 }
 .header-link {
   display: block;
@@ -172,6 +172,7 @@ img {
   background-color: #4d5ae5;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   margin: 0 auto;
+  border: none;
 }
 .order-btn:hover,
 .order-btn:focus {
@@ -190,6 +191,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  width: calc((100% - 3 * 24px) / 4);
 }
 .feature-caption {
   font-weight: 500;
@@ -214,7 +216,6 @@ img {
 }
 .team-item {
   border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px;
   width: 264px;
   height: 380px;
   box-shadow:
@@ -223,8 +224,10 @@ img {
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background-color: #fff;
 }
+.team-text-wrap {
+  padding: 32px 16px;
+}
 .worker-img {
-  margin-bottom: 32px;
 }
 .worker-name {
   font-weight: 500;
@@ -252,7 +255,8 @@ img {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  row-gap: 48px;
+  column-gap: 24px;
 }
 .portfolio-item {
   width: calc((100% - 2 * 24px) / 3);
@@ -262,12 +266,11 @@ img {
 .portfolio-text-wrap {
   display: flex;
   flex-direction: column;
+  border-top: none;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
   padding: 32px 16px;
-  width: 360px;
-  height: 120px;
 }
 .portfolio-item-name {
   font-weight: 500;
@@ -284,12 +287,12 @@ img {
 /* #region Footer*/
 .footer {
   background-color: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .footer-wrapper {
   display: flex;
   flex-direction: column;
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 .logo-footer {
   color: #f4f4fd;
