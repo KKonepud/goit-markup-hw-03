@@ -217,7 +217,6 @@ img {
 .team-item {
   border-radius: 0 0 4px 4px;
   width: 264px;
-  height: 380px;
   box-shadow:
     0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
@@ -266,10 +265,8 @@ img {
 .portfolio-text-wrap {
   display: flex;
   flex-direction: column;
+  border: 1px solid #e7e9fc;
   border-top: none;
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
   padding: 32px 16px;
 }
 .portfolio-item-name {
